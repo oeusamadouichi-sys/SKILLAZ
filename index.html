@@ -76,3 +76,31 @@
   <div class="fr"><strong>Cours 6 :</strong> Marketing digital</div>
   <div class="ar"><strong>الدورة 6:</strong> التسويق الرقمي</div>
 </div>
+<button onclick="showLang('fr')">Français</button>
+<button onclick="showLang('ar')">العربية</button>
+<button onclick="showLang('both')">Les deux</button>
+
+<div class="section bilingual">
+  <div class="fr">...</div>
+  <div class="ar">...</div>
+</div>
+<!-- plusieurs sections comme tu as déjà -->
+
+<script>
+  function showLang(lang) {
+    const frElems = document.querySelectorAll('.fr');
+    const arElems = document.querySelectorAll('.ar');
+    if (lang === 'fr') {
+      frElems.forEach(e => e.style.display = 'block');
+      arElems.forEach(e => e.style.display = 'none');
+    } else if (lang === 'ar') {
+      frElems.forEach(e => e.style.display = 'none');
+      arElems.forEach(e => e.style.display = 'block');
+    } else {
+      frElems.forEach(e => e.style.display = 'block');
+      arElems.forEach(e => e.style.display = 'block');
+    }
+  }
+  // Par défaut on affiche les deux
+  showLang('both');
+</script>
