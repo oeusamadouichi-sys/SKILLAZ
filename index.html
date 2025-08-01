@@ -2,58 +2,60 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skillaz</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skillaz WebApp</title>
   <style>
     body {
-      background-color: #f8f9fa;
-      font-family: 'Segoe UI', sans-serif;
-      padding: 2rem;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
     }
-    .card {
-      border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .header {
+    header {
+      background: #007bff;
+      color: white;
+      padding: 15px;
       text-align: center;
-      margin-bottom: 2rem;
+      border-radius: 8px;
     }
-    .header h1 {
-      font-size: 2rem;
-      font-weight: bold;
+    .section {
+      background: white;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
-    .btn-primary {
-      border-radius: 2rem;
+    .bilingual {
+      display: flex;
+      flex-direction: column;
+    }
+    .fr, .ar {
+      margin: 5px 0;
+    }
+    .ar {
+      direction: rtl;
+      text-align: right;
+      font-family: "Arial", sans-serif;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>Bienvenue sur Skillaz</h1>
-      <p>Accès rapide aux services freelances</p>
-    </div>
-    
-    <div class="card p-4 mb-3">
-      <h5>Traduction express</h5>
-      <p>Traduisez tout type de document en 24h avec un pro certifié.</p>
-      <a href="https://wa.me/212612345678" class="btn btn-primary w-100">Commander sur WhatsApp</a>
-    </div>
-    
-    <div class="card p-4 mb-3">
-      <h5>CV Professionnel</h5>
-      <p>Faites rédiger un CV moderne et impactant par un expert RH.</p>
-      <a href="https://wa.me/212612345678" class="btn btn-primary w-100">Commander sur WhatsApp</a>
-    </div>
-    
-    <div class="card p-4 mb-3">
-      <h5>Création logo & visuels</h5>
-      <p>Logo, carte de visite, flyers et visuels réseaux pro en 48h.</p>
-      <a href="https://wa.me/212612345678" class="btn btn-primary w-100">Commander sur WhatsApp</a>
-    </div>
+  <header>
+    <h1>Skillaz - Plateforme de compétences</h1>
+  </header>
 
-    <p class="text-center mt-5 text-muted" style="font-size: 0.9rem;">© 2025 Skillaz. Tous droits réservés.</p>
+  <div class="section bilingual">
+    <div class="fr"><strong>Cours 1 :</strong> Introduction à Skillaz</div>
+    <div class="ar"><strong>الدورة 1:</strong> مقدمة إلى Skillaz</div>
+  </div>
+
+  <div class="section bilingual">
+    <div class="fr"><strong>Cours 2 :</strong> Développement web</div>
+    <div class="ar"><strong>الدورة 2:</strong> تطوير الويب</div>
+  </div>
+
+  <div class="section bilingual">
+    <div class="fr"><strong>Cours 3 :</strong> Gestion de projet</div>
+    <div class="ar"><strong>الدورة 3:</strong> إدارة المشاريع</div>
   </div>
 </body>
 </html>
